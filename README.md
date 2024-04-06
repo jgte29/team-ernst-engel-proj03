@@ -41,8 +41,10 @@ We choose take adopted a nuanced approach to examing Nutritonal Adequacy in our 
 | **75% Adequacy** | $\times$ | | $\times$ | | 0.50 |
 | **50% Adequacy** | $\times$ | $\times$ | $\times$ | | 0.75 |
 
-As we see in the able above, Adequacy Share at some Adequacy Level $\alpha$ is the proportion of nutrients for which a housholds total intake of the nutrient is greater than or equal to $\alpha$. <br>
-$\text{Adequacy Share}_{h} = \frac{\sum_{i = 1}^{n} \textbf{1}(\frac{\textit{Nutrient i Intake}_{h}}{\textit{Nutrient i Requirement}_{h}} \ge \alpha)}{n}; \hspace{0.1cm} \forall \text{ Households } h$
-- nutritional_adequacy.ipynb: In this notebook, we examine the nutritional adequacy of the diets of the households in our analysis.
-- nutritional_content.ipynb: In this notebook, we obtain the nutritional contents for the foods of interest for our project.
-- demand.ipynb: In this notebook, we examine a system of demands for various food products, and examine heterogeneity in household consumption.
+As we see in the able above, Adequacy Share at some Adequacy Level $\alpha$ is the proportion of nutrients for which a housholds total intake of the nutrient is greater than or equal to $\alpha$.
+- nutritional_adequacy.ipynb:
+     1) Getting Nutritional Contents
+When originally going about our research, we utilized the functions in `nutritional_content.ipynb` to query the USDA FoodData Central API and pull the requisite nutritional contents for our food products. However, doing so takes a considerable amount of time. Therefore, in order to speed up and faciliate the usage of this notebook, especially when using the widgets in the master notebook, we have provided and read in a `.csv` file called `./data/tanzania/fct.csv` that contains all of the information we compiled from the API. If you wish, feel free to run the code that we used to create `./data/tanzania/fct.csv` by uncommenting the code in the cell below and inputing a valid `apikey`. <br>
+**Warning:** The code may take up to a couple of minutes to run, so re-comment the code after running it in order to avoid unintentionally re-running it.
+
+For additional specifics on how we get our nutritional contents, see `nutritional_content.ipynb`
