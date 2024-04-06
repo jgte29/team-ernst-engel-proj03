@@ -27,4 +27,22 @@ Welcome to the Project 02 GitHub Repository for Team Ernst Engel. Our code for t
    ```bash
    git clone https://github.com/jgte29/team-ernst-engel-proj03.git
 
-### Notebook Specific Usage Notes:
+### Notebook Specific Notes:
+- master_notebook.ipynb:
+     1) To test the functionality of all our code, only this notebook needs to be run. If it works, it indicates that all of the code in the other notebooks are properly running.
+     2) Understanding Nutritional Adequacy
+We choose take adopted a nuanced approach to examing Nutritonal Adequacy in our project. The best way to explain our approach is through an example. Suppose we have the following nutritional requirements and consumption data for some arbitrary household.
+
+| **Nutrient** | A | B | C | D | Adequacy Share
+|:-----------:|:----------:|:-----------:|:----------:|:-----------:|:-----------:|
+| **Intake** | 105 kg |53 kg|75 kg|29 kg||
+| **Requirement** | 100 kg |100 kg|100 kg|100 kg| |
+| **100% Adequacy** | $\times$ | | | | 0.25 |
+| **75% Adequacy** | $\times$ | | $\times$ | | 0.50 |
+| **50% Adequacy** | $\times$ | $\times$ | $\times$ | | 0.75 |
+
+As we see in the able above, Adequacy Share at some Adequacy Level $\alpha$ is the proportion of nutrients for which a housholds total intake of the nutrient is greater than or equal to $\alpha$. <br>
+$$\text{Adequacy Share}_{h} = \frac{\sum_{i = 1}^{n} \textbf{1}(\frac{\textit{Nutrient i Intake}_{h}}{\textit{Nutrient i Requirement}_{h}} \ge \alpha)}{n}; \hspace{0.1cm} \forall \text{ Households } h$$
+- nutritional_adequacy.ipynb: In this notebook, we examine the nutritional adequacy of the diets of the households in our analysis.
+- nutritional_content.ipynb: In this notebook, we obtain the nutritional contents for the foods of interest for our project.
+- demand.ipynb: In this notebook, we examine a system of demands for various food products, and examine heterogeneity in household consumption.
