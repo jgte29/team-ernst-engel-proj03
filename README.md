@@ -42,7 +42,7 @@ We choose take adopted a nuanced approach to examing Nutritonal Adequacy in our 
 | **50% Adequacy** | $\times$ | $\times$ | $\times$ | | 0.75 |
 
 As we see in the able above, Adequacy Share at some Adequacy Level $\alpha$ is the proportion of nutrients for which a housholds total intake of the nutrient is greater than or equal to $\alpha$. <br>
-$$\text{Adequacy Share}_{h} = \frac{\sum_{i = 1}^{n} \textbf{1}(\frac{\textit{Nutrient i Intake}_{h}}{\textit{Nutrient i Requirement}_{h}} \ge \alpha)}{n}; \hspace{0.1cm} \forall \text{ Households } h$$
+$\text{Adequacy Share}_{h} = \frac{\sum_{i = 1}^{n} \textbf{1}(\frac{\textit{Nutrient i Intake}_{h}}{\textit{Nutrient i Requirement}_{h}} \ge \alpha)}{n}; \hspace{0.1cm} \forall \text{ Households } h$
 - nutritional_adequacy.ipynb: In this notebook, we examine the nutritional adequacy of the diets of the households in our analysis.
 - nutritional_content.ipynb: In this notebook, we obtain the nutritional contents for the foods of interest for our project.
 - demand.ipynb: In this notebook, we examine a system of demands for various food products, and examine heterogeneity in household consumption.
